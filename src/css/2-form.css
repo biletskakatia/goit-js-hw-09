@@ -1,0 +1,65 @@
+@import url('./reset.css');
+.page-nav{
+margin-left: 24px;
+
+}
+.feedback-form {
+    width: 480px;
+    border-radius: 4px;
+}
+
+.feedback-form>label {
+    width: 100%;
+    padding-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    margin: 16px 24px;
+
+}
+
+.feedback-form input,
+.feedback-form textarea {
+    font: inherit;
+    padding: 8px 16px;
+    margin-top: 8px;
+}
+
+.feedback-form textarea {
+    resize: none;
+}
+button{
+    background-color: #4E75FF;
+    color: #FFF;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    margin-left: 24px;
+    margin-bottom: 24px;
+    border: none;
+}
+button:hover {
+    background-color: #6C8CFF;
+}
+label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-align: left;
+}
+.feedback-form input::placeholder,
+.feedback-form textarea::placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    margin-left: 16px;
+}
+
+.feedback-form input:focus::placeholder,
+.feedback-form textarea:focus::placeholder {
+    opacity: 1;
+}

@@ -1,0 +1,53 @@
+@import url('./reset.css');
+.body {
+margin: 0;
+font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+width: 100%;
+max-width: 1440px;
+margin: 0 auto;
+}
+
+.gallery {
+list-style: none;
+padding: 0;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 24px;
+margin: 24px 0;
+}
+
+.gallery-image {
+width: 360px;
+height: 200px;
+transition: transform .5s;
+}
+
+.gallery-image:hover {
+transform: scale(1.1);
+}
+.page-nav {
+display: flex;
+justify-content: center;
+
+}
+.sl-wrapper{
+background-color: rgba(46, 47, 66, 0.8);
+}
+.sl-close  {
+color: #FFFFFF !important;
+}
+.sl-navigation button{
+color: #FFFFFF !important;
+} 
+.sl-counter{
+    color: #FFFFFF !important;
+    font-family: 'Montserrat', sans-serif;
+}
+.sl-caption{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
