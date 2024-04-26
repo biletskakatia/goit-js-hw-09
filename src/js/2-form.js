@@ -29,10 +29,13 @@ function updateFormInputs() {
 }
 function handleSubmit(event) {
   event.preventDefault();
-  if (!formData.email || !formData.message) {
+  const trimmedEmail = formData.email.trim();
+  const trimmedMessage = formData.message.trim();
+  if (!trimmedEmail || !trimmedMessage) {
     alert('Fill please all fields');
     return;
   }
+  formData = { email: trimmedEmail, message: trimmedMessage };
   console.log('Form data:', formData);
   clearFormDataAndLocalStorage();
 }

@@ -79,10 +79,10 @@ const markup = images.reduce((html, image) => {
 </li> `);  
 }, '');
 galleryListEl.insertAdjacentHTML('beforeend', markup);
-document.addEventListener('DOMContentLoaded', function () {
+
   const gallery = new SimpleLightbox('.gallery a', {
     captions: true, 
     captionsData: 'alt', 
     captionDelay: 250, 
   });
-}); 
+
